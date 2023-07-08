@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Gym
 {
-    public partial class Form1 : Form
+    public partial class CoachForm : Form
     {
-        public Form1()
+        public CoachForm()
         {
             InitializeComponent();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
