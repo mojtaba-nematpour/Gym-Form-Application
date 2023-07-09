@@ -192,6 +192,7 @@
             this.CoachSaveBtn.TabIndex = 13;
             this.CoachSaveBtn.Text = "ذخیره";
             this.CoachSaveBtn.UseVisualStyleBackColor = true;
+            this.CoachSaveBtn.Click += new System.EventHandler(this.CoachSaveBtn_Click);
             // 
             // CoachRmBtn
             // 
@@ -201,14 +202,15 @@
             this.CoachRmBtn.TabIndex = 14;
             this.CoachRmBtn.Text = "حذف";
             this.CoachRmBtn.UseVisualStyleBackColor = true;
+            this.CoachRmBtn.Click += new System.EventHandler(this.CoachRmBtn_Click);
             // 
             // CoachFormTitle
             // 
-            this.CoachFormTitle.AutoSize = true;
             this.CoachFormTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoachFormTitle.Location = new System.Drawing.Point(351, 9);
+            this.CoachFormTitle.Location = new System.Drawing.Point(102, 9);
             this.CoachFormTitle.Name = "CoachFormTitle";
-            this.CoachFormTitle.Size = new System.Drawing.Size(143, 26);
+            this.CoachFormTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.CoachFormTitle.Size = new System.Drawing.Size(400, 26);
             this.CoachFormTitle.TabIndex = 22;
             this.CoachFormTitle.Text = "افزودن مربی جدید";
             // 
@@ -230,13 +232,13 @@
             this.Name = "CoachForm";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "افزودن مربی";
+            this.Load += new System.EventHandler(this.CoachForm_Load);
             this.CoachOtherBox.ResumeLayout(false);
             this.CoachOtherBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CoachImg)).EndInit();
             this.CoachInfoBox.ResumeLayout(false);
             this.CoachInfoBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

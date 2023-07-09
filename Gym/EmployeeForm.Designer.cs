@@ -60,6 +60,7 @@
             this.EmployeeRmBtn.TabIndex = 19;
             this.EmployeeRmBtn.Text = "حذف";
             this.EmployeeRmBtn.UseVisualStyleBackColor = true;
+            this.EmployeeRmBtn.Click += new System.EventHandler(this.EmployeeRmBtn_Click);
             // 
             // EmployeeSaveBtn
             // 
@@ -69,6 +70,7 @@
             this.EmployeeSaveBtn.TabIndex = 18;
             this.EmployeeSaveBtn.Text = "ذخیره";
             this.EmployeeSaveBtn.UseVisualStyleBackColor = true;
+            this.EmployeeSaveBtn.Click += new System.EventHandler(this.EmployeeSaveBtn_Click);
             // 
             // EmployeeOtherBox
             // 
@@ -256,11 +258,13 @@
             // 
             // EmployeeFormTitle
             // 
-            this.EmployeeFormTitle.AutoSize = true;
+            this.EmployeeFormTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EmployeeFormTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeFormTitle.Location = new System.Drawing.Point(351, 9);
+            this.EmployeeFormTitle.Location = new System.Drawing.Point(103, 9);
             this.EmployeeFormTitle.Name = "EmployeeFormTitle";
-            this.EmployeeFormTitle.Size = new System.Drawing.Size(151, 26);
+            this.EmployeeFormTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.EmployeeFormTitle.Size = new System.Drawing.Size(400, 26);
             this.EmployeeFormTitle.TabIndex = 21;
             this.EmployeeFormTitle.Text = "افزودن کارمند جدید";
             // 
@@ -281,14 +285,13 @@
             this.MinimumSize = new System.Drawing.Size(530, 370);
             this.Name = "EmployeeForm";
             this.Text = "افزودن کارمند";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeForm_FormClosed);
+            this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.EmployeeOtherBox.ResumeLayout(false);
             this.EmployeeOtherBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeImg)).EndInit();
             this.EmployeeInfoBox.ResumeLayout(false);
             this.EmployeeInfoBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

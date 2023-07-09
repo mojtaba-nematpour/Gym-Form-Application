@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+
 namespace Gym.Model
 {
 
@@ -19,6 +24,61 @@ namespace Gym.Model
             this.Gaols = Gaols;
             this.ContractValue = ContractValue;
             this.Position = Position;
+        }
+
+        public override void Save()
+        {
+            Random rnd = new Random();
+
+            var Players = Player.All();
+
+            string key = Convert.ToString(Players.Count + rnd.Next(100, 999));
+            Players.Add(key, this);
+
+            this.Store(Players);
+        }
+
+        public override void Edit(string key)
+        {
+            var Players = Player.All();
+            if (Players.ContainsKey(key))
+            {
+                Players[key] = this;
+
+                this.Store(Players);
+            }
+        }
+
+        public override void Delete(string key)
+        {
+            var Players = Player.All();
+            if (Players.ContainsKey(key))
+            {
+                Players.Remove(key);
+
+                this.Store(Players);
+            }
+        }
+
+        public static Player Show(string key)
+        {
+            var Players = Player.All();
+            if (Players.ContainsKey(key))
+            {
+                return Players[key];
+            }
+
+            return null;
+        }
+
+        public static Dictionary<string, Player> All()
+        {
+            return JsonSerializer.Deserialize<Dictionary<string, Player>>(File.ReadAllText(Path.GetFullPath(Storage)));
+        }
+
+        private void Store(Dictionary<string, Player> Players)
+        {
+            File.WriteAllText(Storage, JsonSerializer.Serialize(Players));
         }
     }
 }

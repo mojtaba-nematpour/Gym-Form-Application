@@ -62,6 +62,7 @@
             this.PlayerRmBtn.TabIndex = 19;
             this.PlayerRmBtn.Text = "حذف";
             this.PlayerRmBtn.UseVisualStyleBackColor = true;
+            this.PlayerRmBtn.Click += new System.EventHandler(this.PlayerRmBtn_Click);
             // 
             // PlayerSaveBtn
             // 
@@ -71,6 +72,7 @@
             this.PlayerSaveBtn.TabIndex = 18;
             this.PlayerSaveBtn.Text = "ذخیره";
             this.PlayerSaveBtn.UseVisualStyleBackColor = true;
+            this.PlayerSaveBtn.Click += new System.EventHandler(this.PlayerSaveBtn_Click);
             // 
             // PlayerOtherBox
             // 
@@ -251,11 +253,11 @@
             // 
             // PlayerFormTitle
             // 
-            this.PlayerFormTitle.AutoSize = true;
             this.PlayerFormTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayerFormTitle.Location = new System.Drawing.Point(328, 9);
+            this.PlayerFormTitle.Location = new System.Drawing.Point(107, 9);
             this.PlayerFormTitle.Name = "PlayerFormTitle";
-            this.PlayerFormTitle.Size = new System.Drawing.Size(174, 26);
+            this.PlayerFormTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.PlayerFormTitle.Size = new System.Drawing.Size(400, 26);
             this.PlayerFormTitle.TabIndex = 20;
             this.PlayerFormTitle.Text = "افزودن ورزشکار جدید";
             // 
@@ -276,13 +278,13 @@
             this.MinimumSize = new System.Drawing.Size(530, 380);
             this.Name = "PlayerForm";
             this.Text = "افزودن ورزشکار";
+            this.Load += new System.EventHandler(this.PlayerForm_Load);
             this.PlayerOtherBox.ResumeLayout(false);
             this.PlayerOtherBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PlayerImg)).EndInit();
             this.PlayerInfoBox.ResumeLayout(false);
             this.PlayerInfoBox.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

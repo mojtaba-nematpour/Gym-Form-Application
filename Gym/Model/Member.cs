@@ -1,8 +1,9 @@
 using System;
+using System.Collections.Generic;
 
 namespace Gym.Model
 {
-    public abstract class Member
+    public abstract class Member: MemberInterface
     {
         public string Name { get; set; }
 
@@ -17,31 +18,10 @@ namespace Gym.Model
             this.Age = Age;
         }
 
-        public static string[] List()
-        {
-            string[] Table = { };
+        public abstract void Save();
 
-            return Table;
-        }
+        public abstract void Edit(string key);
 
-        public static void Save()
-        {
-
-        }
-
-        public static void Edit()
-        {
-
-        }
-
-        public static string Show()
-        {
-            return "";
-        }
-         
-        public static void Delete()
-        {
-
-        }
+        public abstract void Delete(string key);
     }
 }

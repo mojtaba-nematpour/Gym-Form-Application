@@ -35,36 +35,36 @@
             this.AllTabs = new System.Windows.Forms.TabControl();
             this.EmployeeTab = new System.Windows.Forms.TabPage();
             this.EmployeePanel = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.EmployeeSortSalary = new System.Windows.Forms.Label();
+            this.EmployeeSortPosition = new System.Windows.Forms.Label();
+            this.EmployeeSortPerCode = new System.Windows.Forms.Label();
+            this.EmployeeSortAge = new System.Windows.Forms.Label();
+            this.EmployeeSortNational = new System.Windows.Forms.Label();
+            this.EmployeeSortName = new System.Windows.Forms.Label();
+            this.EmployeeSortId = new System.Windows.Forms.Label();
             this.EmployeeTable = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EmployeeAddBtn = new System.Windows.Forms.Button();
             this.CoachTab = new System.Windows.Forms.TabPage();
             this.CoachPanel = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.CoachSortContractValue = new System.Windows.Forms.Label();
+            this.CoachSortField = new System.Windows.Forms.Label();
+            this.CoachSortAge = new System.Windows.Forms.Label();
+            this.CoachSortNational = new System.Windows.Forms.Label();
+            this.CoachSortName = new System.Windows.Forms.Label();
+            this.CoachSortId = new System.Windows.Forms.Label();
             this.CoachTable = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.CoachAddBtn = new System.Windows.Forms.Button();
             this.PlayerTab = new System.Windows.Forms.TabPage();
             this.PlayerPanel = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.PlayerSortPosition = new System.Windows.Forms.Label();
+            this.PlayerSortContractValue = new System.Windows.Forms.Label();
+            this.PlayerSortGoals = new System.Windows.Forms.Label();
+            this.PlayerSortAge = new System.Windows.Forms.Label();
+            this.PlayerSortNational = new System.Windows.Forms.Label();
+            this.PlayerSortName = new System.Windows.Forms.Label();
+            this.PlayerSortId = new System.Windows.Forms.Label();
             this.PlayerTable = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.PlayerAddBtn = new System.Windows.Forms.Button();
@@ -158,13 +158,13 @@
             // EmployeePanel
             // 
             this.EmployeePanel.BackColor = System.Drawing.Color.White;
-            this.EmployeePanel.Controls.Add(this.label10);
-            this.EmployeePanel.Controls.Add(this.label9);
-            this.EmployeePanel.Controls.Add(this.label8);
-            this.EmployeePanel.Controls.Add(this.label7);
-            this.EmployeePanel.Controls.Add(this.label6);
-            this.EmployeePanel.Controls.Add(this.label5);
-            this.EmployeePanel.Controls.Add(this.label4);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortSalary);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortPosition);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortPerCode);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortAge);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortNational);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortName);
+            this.EmployeePanel.Controls.Add(this.EmployeeSortId);
             this.EmployeePanel.Controls.Add(this.EmployeeTable);
             this.EmployeePanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.EmployeePanel.Location = new System.Drawing.Point(6, 42);
@@ -172,75 +172,82 @@
             this.EmployeePanel.Size = new System.Drawing.Size(1447, 670);
             this.EmployeePanel.TabIndex = 3;
             // 
-            // label10
+            // EmployeeSortSalary
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(259, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 20);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "حقوق ماهیانه";
+            this.EmployeeSortSalary.AutoSize = true;
+            this.EmployeeSortSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortSalary.Location = new System.Drawing.Point(259, 9);
+            this.EmployeeSortSalary.Name = "EmployeeSortSalary";
+            this.EmployeeSortSalary.Size = new System.Drawing.Size(77, 20);
+            this.EmployeeSortSalary.TabIndex = 7;
+            this.EmployeeSortSalary.Text = "حقوق ماهیانه";
+            this.EmployeeSortSalary.Click += new System.EventHandler(this.EmployeeSortSalary_Click);
             // 
-            // label9
+            // EmployeeSortPosition
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(507, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 20);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "سمت";
+            this.EmployeeSortPosition.AutoSize = true;
+            this.EmployeeSortPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortPosition.Location = new System.Drawing.Point(507, 9);
+            this.EmployeeSortPosition.Name = "EmployeeSortPosition";
+            this.EmployeeSortPosition.Size = new System.Drawing.Size(34, 20);
+            this.EmployeeSortPosition.TabIndex = 6;
+            this.EmployeeSortPosition.Text = "سمت";
+            this.EmployeeSortPosition.Click += new System.EventHandler(this.EmployeeSortPosition_Click);
             // 
-            // label8
+            // EmployeeSortPerCode
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(680, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 20);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "کد پرسنلی";
+            this.EmployeeSortPerCode.AutoSize = true;
+            this.EmployeeSortPerCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortPerCode.Location = new System.Drawing.Point(672, 9);
+            this.EmployeeSortPerCode.Name = "EmployeeSortPerCode";
+            this.EmployeeSortPerCode.Size = new System.Drawing.Size(61, 20);
+            this.EmployeeSortPerCode.TabIndex = 5;
+            this.EmployeeSortPerCode.Text = "کد پرسنلی";
+            this.EmployeeSortPerCode.Click += new System.EventHandler(this.EmployeeSortPerCode_Click);
             // 
-            // label7
+            // EmployeeSortAge
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(814, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "سن";
+            this.EmployeeSortAge.AutoSize = true;
+            this.EmployeeSortAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortAge.Location = new System.Drawing.Point(805, 9);
+            this.EmployeeSortAge.Name = "EmployeeSortAge";
+            this.EmployeeSortAge.Size = new System.Drawing.Size(26, 20);
+            this.EmployeeSortAge.TabIndex = 4;
+            this.EmployeeSortAge.Text = "سن";
+            this.EmployeeSortAge.Click += new System.EventHandler(this.EmployeeSortAge_Click);
             // 
-            // label6
+            // EmployeeSortNational
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(998, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "کد ملی";
+            this.EmployeeSortNational.AutoSize = true;
+            this.EmployeeSortNational.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortNational.Location = new System.Drawing.Point(998, 9);
+            this.EmployeeSortNational.Name = "EmployeeSortNational";
+            this.EmployeeSortNational.Size = new System.Drawing.Size(41, 20);
+            this.EmployeeSortNational.TabIndex = 3;
+            this.EmployeeSortNational.Text = "کد ملی";
+            this.EmployeeSortNational.Click += new System.EventHandler(this.EmployeeSortNational_Click);
             // 
-            // label5
+            // EmployeeSortName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1244, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "نام نام خانوادگی";
+            this.EmployeeSortName.AutoSize = true;
+            this.EmployeeSortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortName.Location = new System.Drawing.Point(1244, 9);
+            this.EmployeeSortName.Name = "EmployeeSortName";
+            this.EmployeeSortName.Size = new System.Drawing.Size(90, 20);
+            this.EmployeeSortName.TabIndex = 2;
+            this.EmployeeSortName.Text = "نام نام خانوادگی";
+            this.EmployeeSortName.Click += new System.EventHandler(this.EmployeeSortName_Click);
             // 
-            // label4
+            // EmployeeSortId
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1398, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "شناسه";
+            this.EmployeeSortId.AutoSize = true;
+            this.EmployeeSortId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSortId.Location = new System.Drawing.Point(1388, 9);
+            this.EmployeeSortId.Name = "EmployeeSortId";
+            this.EmployeeSortId.Size = new System.Drawing.Size(42, 20);
+            this.EmployeeSortId.TabIndex = 1;
+            this.EmployeeSortId.Text = "شناسه";
+            this.EmployeeSortId.Click += new System.EventHandler(this.EmployeeSortId_Click);
             // 
             // EmployeeTable
             // 
@@ -257,7 +264,7 @@
             this.EmployeeTable.Name = "EmployeeTable";
             this.EmployeeTable.RowCount = 1;
             this.EmployeeTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.EmployeeTable.Size = new System.Drawing.Size(1441, 50);
+            this.EmployeeTable.Size = new System.Drawing.Size(1433, 50);
             this.EmployeeTable.TabIndex = 0;
             // 
             // panel1
@@ -299,12 +306,12 @@
             // CoachPanel
             // 
             this.CoachPanel.BackColor = System.Drawing.Color.White;
-            this.CoachPanel.Controls.Add(this.label12);
-            this.CoachPanel.Controls.Add(this.label13);
-            this.CoachPanel.Controls.Add(this.label14);
-            this.CoachPanel.Controls.Add(this.label15);
-            this.CoachPanel.Controls.Add(this.label16);
-            this.CoachPanel.Controls.Add(this.label17);
+            this.CoachPanel.Controls.Add(this.CoachSortContractValue);
+            this.CoachPanel.Controls.Add(this.CoachSortField);
+            this.CoachPanel.Controls.Add(this.CoachSortAge);
+            this.CoachPanel.Controls.Add(this.CoachSortNational);
+            this.CoachPanel.Controls.Add(this.CoachSortName);
+            this.CoachPanel.Controls.Add(this.CoachSortId);
             this.CoachPanel.Controls.Add(this.CoachTable);
             this.CoachPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.CoachPanel.Location = new System.Drawing.Point(6, 42);
@@ -312,65 +319,71 @@
             this.CoachPanel.Size = new System.Drawing.Size(1447, 670);
             this.CoachPanel.TabIndex = 3;
             // 
-            // label12
+            // CoachSortContractValue
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(452, 8);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 20);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "ارزش قرار داد";
+            this.CoachSortContractValue.AutoSize = true;
+            this.CoachSortContractValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortContractValue.Location = new System.Drawing.Point(442, 8);
+            this.CoachSortContractValue.Name = "CoachSortContractValue";
+            this.CoachSortContractValue.Size = new System.Drawing.Size(88, 20);
+            this.CoachSortContractValue.TabIndex = 14;
+            this.CoachSortContractValue.Text = "ارزش قرار داد";
+            this.CoachSortContractValue.Click += new System.EventHandler(this.CoachSortContractValue_Click);
             // 
-            // label13
+            // CoachSortField
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(665, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 20);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "زمینه فعالیت";
+            this.CoachSortField.AutoSize = true;
+            this.CoachSortField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortField.Location = new System.Drawing.Point(656, 8);
+            this.CoachSortField.Name = "CoachSortField";
+            this.CoachSortField.Size = new System.Drawing.Size(73, 20);
+            this.CoachSortField.TabIndex = 13;
+            this.CoachSortField.Text = "زمینه فعالیت";
+            this.CoachSortField.Click += new System.EventHandler(this.CoachSortField_Click);
             // 
-            // label14
+            // CoachSortAge
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(814, 8);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(26, 20);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "سن";
+            this.CoachSortAge.AutoSize = true;
+            this.CoachSortAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortAge.Location = new System.Drawing.Point(804, 8);
+            this.CoachSortAge.Name = "CoachSortAge";
+            this.CoachSortAge.Size = new System.Drawing.Size(26, 20);
+            this.CoachSortAge.TabIndex = 12;
+            this.CoachSortAge.Text = "سن";
+            this.CoachSortAge.Click += new System.EventHandler(this.CoachSortAge_Click);
             // 
-            // label15
+            // CoachSortNational
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(998, 8);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 20);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "کد ملی";
+            this.CoachSortNational.AutoSize = true;
+            this.CoachSortNational.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortNational.Location = new System.Drawing.Point(990, 8);
+            this.CoachSortNational.Name = "CoachSortNational";
+            this.CoachSortNational.Size = new System.Drawing.Size(41, 20);
+            this.CoachSortNational.TabIndex = 11;
+            this.CoachSortNational.Text = "کد ملی";
+            this.CoachSortNational.Click += new System.EventHandler(this.CoachSortNational_Click);
             // 
-            // label16
+            // CoachSortName
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1244, 8);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 20);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "نام نام خانوادگی";
+            this.CoachSortName.AutoSize = true;
+            this.CoachSortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortName.Location = new System.Drawing.Point(1240, 8);
+            this.CoachSortName.Name = "CoachSortName";
+            this.CoachSortName.Size = new System.Drawing.Size(90, 20);
+            this.CoachSortName.TabIndex = 10;
+            this.CoachSortName.Text = "نام نام خانوادگی";
+            this.CoachSortName.Click += new System.EventHandler(this.CoachSortName_Click);
             // 
-            // label17
+            // CoachSortId
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(1398, 8);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(42, 20);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "شناسه";
+            this.CoachSortId.AutoSize = true;
+            this.CoachSortId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoachSortId.Location = new System.Drawing.Point(1387, 8);
+            this.CoachSortId.Name = "CoachSortId";
+            this.CoachSortId.Size = new System.Drawing.Size(42, 20);
+            this.CoachSortId.TabIndex = 9;
+            this.CoachSortId.Text = "شناسه";
+            this.CoachSortId.Click += new System.EventHandler(this.CoachSortId_Click);
             // 
             // CoachTable
             // 
@@ -387,7 +400,7 @@
             this.CoachTable.Name = "CoachTable";
             this.CoachTable.RowCount = 1;
             this.CoachTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.CoachTable.Size = new System.Drawing.Size(1440, 50);
+            this.CoachTable.Size = new System.Drawing.Size(1431, 50);
             this.CoachTable.TabIndex = 8;
             // 
             // panel2
@@ -430,13 +443,13 @@
             // PlayerPanel
             // 
             this.PlayerPanel.BackColor = System.Drawing.Color.White;
-            this.PlayerPanel.Controls.Add(this.label23);
-            this.PlayerPanel.Controls.Add(this.label11);
-            this.PlayerPanel.Controls.Add(this.label18);
-            this.PlayerPanel.Controls.Add(this.label19);
-            this.PlayerPanel.Controls.Add(this.label20);
-            this.PlayerPanel.Controls.Add(this.label21);
-            this.PlayerPanel.Controls.Add(this.label22);
+            this.PlayerPanel.Controls.Add(this.PlayerSortPosition);
+            this.PlayerPanel.Controls.Add(this.PlayerSortContractValue);
+            this.PlayerPanel.Controls.Add(this.PlayerSortGoals);
+            this.PlayerPanel.Controls.Add(this.PlayerSortAge);
+            this.PlayerPanel.Controls.Add(this.PlayerSortNational);
+            this.PlayerPanel.Controls.Add(this.PlayerSortName);
+            this.PlayerPanel.Controls.Add(this.PlayerSortId);
             this.PlayerPanel.Controls.Add(this.PlayerTable);
             this.PlayerPanel.Cursor = System.Windows.Forms.Cursors.Default;
             this.PlayerPanel.Location = new System.Drawing.Point(6, 42);
@@ -444,75 +457,82 @@
             this.PlayerPanel.Size = new System.Drawing.Size(1447, 670);
             this.PlayerPanel.TabIndex = 2;
             // 
-            // label23
+            // PlayerSortPosition
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(406, 10);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(34, 20);
-            this.label23.TabIndex = 22;
-            this.label23.Text = "سمت";
+            this.PlayerSortPosition.AutoSize = true;
+            this.PlayerSortPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortPosition.Location = new System.Drawing.Point(397, 10);
+            this.PlayerSortPosition.Name = "PlayerSortPosition";
+            this.PlayerSortPosition.Size = new System.Drawing.Size(34, 20);
+            this.PlayerSortPosition.TabIndex = 22;
+            this.PlayerSortPosition.Text = "سمت";
+            this.PlayerSortPosition.Click += new System.EventHandler(this.PlayerSortPosition_Click);
             // 
-            // label11
+            // PlayerSortContractValue
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(553, 10);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 20);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "ارزش قرار داد";
+            this.PlayerSortContractValue.AutoSize = true;
+            this.PlayerSortContractValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortContractValue.Location = new System.Drawing.Point(539, 10);
+            this.PlayerSortContractValue.Name = "PlayerSortContractValue";
+            this.PlayerSortContractValue.Size = new System.Drawing.Size(88, 20);
+            this.PlayerSortContractValue.TabIndex = 21;
+            this.PlayerSortContractValue.Text = "ارزش قرار داد";
+            this.PlayerSortContractValue.Click += new System.EventHandler(this.PlayerSortContractValue_Click);
             // 
-            // label18
+            // PlayerSortGoals
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(647, 10);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(94, 20);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "تعداد دستاورد ها";
+            this.PlayerSortGoals.AutoSize = true;
+            this.PlayerSortGoals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortGoals.Location = new System.Drawing.Point(633, 10);
+            this.PlayerSortGoals.Name = "PlayerSortGoals";
+            this.PlayerSortGoals.Size = new System.Drawing.Size(94, 20);
+            this.PlayerSortGoals.TabIndex = 20;
+            this.PlayerSortGoals.Text = "تعداد دستاورد ها";
+            this.PlayerSortGoals.Click += new System.EventHandler(this.PlayerSortGoals_Click);
             // 
-            // label19
+            // PlayerSortAge
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(814, 10);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(26, 20);
-            this.label19.TabIndex = 19;
-            this.label19.Text = "سن";
+            this.PlayerSortAge.AutoSize = true;
+            this.PlayerSortAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortAge.Location = new System.Drawing.Point(806, 10);
+            this.PlayerSortAge.Name = "PlayerSortAge";
+            this.PlayerSortAge.Size = new System.Drawing.Size(26, 20);
+            this.PlayerSortAge.TabIndex = 19;
+            this.PlayerSortAge.Text = "سن";
+            this.PlayerSortAge.Click += new System.EventHandler(this.PlayerSortAge_Click);
             // 
-            // label20
+            // PlayerSortNational
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(998, 10);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 20);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "کد ملی";
+            this.PlayerSortNational.AutoSize = true;
+            this.PlayerSortNational.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortNational.Location = new System.Drawing.Point(992, 10);
+            this.PlayerSortNational.Name = "PlayerSortNational";
+            this.PlayerSortNational.Size = new System.Drawing.Size(41, 20);
+            this.PlayerSortNational.TabIndex = 18;
+            this.PlayerSortNational.Text = "کد ملی";
+            this.PlayerSortNational.Click += new System.EventHandler(this.PlayerSortNational_Click);
             // 
-            // label21
+            // PlayerSortName
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(1244, 10);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(90, 20);
-            this.label21.TabIndex = 17;
-            this.label21.Text = "نام نام خانوادگی";
+            this.PlayerSortName.AutoSize = true;
+            this.PlayerSortName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortName.Location = new System.Drawing.Point(1238, 10);
+            this.PlayerSortName.Name = "PlayerSortName";
+            this.PlayerSortName.Size = new System.Drawing.Size(90, 20);
+            this.PlayerSortName.TabIndex = 17;
+            this.PlayerSortName.Text = "نام نام خانوادگی";
+            this.PlayerSortName.Click += new System.EventHandler(this.PlayerSortName_Click);
             // 
-            // label22
+            // PlayerSortId
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(1398, 10);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(42, 20);
-            this.label22.TabIndex = 16;
-            this.label22.Text = "شناسه";
+            this.PlayerSortId.AutoSize = true;
+            this.PlayerSortId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerSortId.Location = new System.Drawing.Point(1386, 10);
+            this.PlayerSortId.Name = "PlayerSortId";
+            this.PlayerSortId.Size = new System.Drawing.Size(42, 20);
+            this.PlayerSortId.TabIndex = 16;
+            this.PlayerSortId.Text = "شناسه";
+            this.PlayerSortId.Click += new System.EventHandler(this.PlayerSortId_Click);
             // 
             // PlayerTable
             // 
@@ -529,7 +549,7 @@
             this.PlayerTable.Name = "PlayerTable";
             this.PlayerTable.RowCount = 1;
             this.PlayerTable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.PlayerTable.Size = new System.Drawing.Size(1440, 50);
+            this.PlayerTable.Size = new System.Drawing.Size(1431, 50);
             this.PlayerTable.TabIndex = 15;
             // 
             // panel3
@@ -605,28 +625,28 @@
         private System.Windows.Forms.Panel EmployeePanel;
         private System.Windows.Forms.Panel CoachPanel;
         private System.Windows.Forms.TableLayoutPanel EmployeeTable;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label EmployeeSortName;
+        private System.Windows.Forms.Label EmployeeSortId;
+        private System.Windows.Forms.Label EmployeeSortSalary;
+        private System.Windows.Forms.Label EmployeeSortPosition;
+        private System.Windows.Forms.Label EmployeeSortPerCode;
+        private System.Windows.Forms.Label EmployeeSortAge;
+        private System.Windows.Forms.Label EmployeeSortNational;
+        private System.Windows.Forms.Label CoachSortContractValue;
+        private System.Windows.Forms.Label CoachSortField;
+        private System.Windows.Forms.Label CoachSortAge;
+        private System.Windows.Forms.Label CoachSortNational;
+        private System.Windows.Forms.Label CoachSortName;
+        private System.Windows.Forms.Label CoachSortId;
         private System.Windows.Forms.TableLayoutPanel CoachTable;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label PlayerSortContractValue;
+        private System.Windows.Forms.Label PlayerSortGoals;
+        private System.Windows.Forms.Label PlayerSortAge;
+        private System.Windows.Forms.Label PlayerSortNational;
+        private System.Windows.Forms.Label PlayerSortName;
+        private System.Windows.Forms.Label PlayerSortId;
         private System.Windows.Forms.TableLayoutPanel PlayerTable;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label PlayerSortPosition;
     }
 }
 

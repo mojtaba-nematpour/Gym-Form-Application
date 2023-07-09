@@ -110,6 +110,7 @@
     <Compile Include="Model\Coach.cs" />
     <Compile Include="Model\Employee.cs" />
     <Compile Include="Model\Member.cs" />
+    <Compile Include="Model\MemberInterface.cs" />
     <Compile Include="Model\Player.cs" />
     <Compile Include="PlayerForm.cs">
       <SubType>Form</SubType>
@@ -160,6 +161,7 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
