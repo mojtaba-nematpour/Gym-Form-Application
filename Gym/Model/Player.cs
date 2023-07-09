@@ -1,22 +1,24 @@
 namespace Gym.Model
 {
 
-    class Player : Member
+    public class Player : Member
     {
-        private int number { get; set; }
+        public int Number { get; set; }
 
-        private int gaols { get; set; }
+        public int Gaols { get; set; }
 
-        private int contractValue { get; set; }
+        public int ContractValue { get; set; }
 
-        private string position { get; set; }
+        public string Position { get; set; }
 
-        public Player(string name, string national, int age, int number, int gaols, int contractValue, string position) : base(name, national, age)
+        public static string Storage = "../../Storage/Players.json";
+
+        public Player(string Name, string National, int Age, int Number, int Gaols, int ContractValue, string Position) : base(Name, National, Age)
         {
-            this.number = number;
-            this.gaols = gaols;
-            this.contractValue = contractValue;
-            this.position = position;
+            this.Number = Number;
+            this.Gaols = Gaols;
+            this.ContractValue = ContractValue;
+            this.Position = Position;
         }
     }
 }

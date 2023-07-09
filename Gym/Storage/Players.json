@@ -1,0 +1,29 @@
+﻿{
+  "1": {
+    "Name": "مجتبی نعمت پور",
+    "National": "1051123456",
+    "Age": 19,
+    "Number": 1,
+    "Gaols": 2,
+    "ContractValue": 50000,
+    "Position": "دفاع"
+  },
+  "2": {
+    "Name": "مصطفی شاکرنیا",
+    "National": "1051111111",
+    "Age": 19,
+    "Number": 2,
+    "Gaols": 10,
+    "ContractValue": 3400,
+    "Position": "دفاع"
+  },
+  "3": {
+    "Name": "رضا علیزاده",
+    "National": "1051123456",
+    "Age": 25,
+    "Number": 3,
+    "Gaols": 0,
+    "ContractValue": 1200,
+    "Position": "دفاع"
+  }
+}

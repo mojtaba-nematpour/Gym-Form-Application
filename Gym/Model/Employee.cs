@@ -1,18 +1,20 @@
 namespace Gym.Model
 {
-    class Employee : Member
+    public class Employee : Member
     {
-        private string personnelCode { get; set; }
+        public string PersonnelCode { get; set; }
 
-        private string position { get; set; }
+        public string Position { get; set; }
 
-        private int salary { get; set; }
+        public int Salary { get; set; }
 
-        public Employee(string name, string national, int age, string personnelCode, string position, int salary) : base(name, national, age)
+        public static string Storage = "../../Storage/Employees.json";
+
+        public Employee(string Name, string National, int Age, string PersonnelCode, string Position, int Salary) : base(Name, National, Age)
         {
-            this.personnelCode = personnelCode;
-            this.position = position;
-            this.salary = salary;
+            this.PersonnelCode = PersonnelCode;
+            this.Position = Position;
+            this.Salary = Salary;
         }
     }
 }

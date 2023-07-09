@@ -1,18 +1,20 @@
+using System;
+
 namespace Gym.Model
 {
-    abstract class Member
+    public abstract class Member
     {
-        protected string name { get; set; }
+        public string Name { get; set; }
 
-        protected string nationalCode { get; set; }
+        public string National { get; set; }
 
-        protected int age { get; set; }
+        public int Age { get; set; }
 
-        public Member(string name, string national, int age)
+        public Member(string Name, string National, int Age)
         {
-            this.name = name;
-            this.nationalCode = national;
-            this.age = age;
+            this.Name = Name;
+            this.National = National;
+            this.Age = Age;
         }
 
         public static string[] List()

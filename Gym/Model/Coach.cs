@@ -1,15 +1,17 @@
 namespace Gym.Model
 {
-    class Coach : Member
+    public class Coach : Member
     {
-        public string field { get; set; }
+        public string Field { get; set; }
 
-        private int contractValue { get; set; }
+        public int ContractValue { get; set; }
 
-        public Coach(string name, string national, int age, string field, int contractValue) : base(name, national, age)
+        public static string Storage = "../../Storage/Coaches.json";
+
+        public Coach(string Name, string National, int Age, string Field, int ContractValue) : base(Name, National, Age)
         {
-            this.field = field;
-            this.contractValue = contractValue;
+            this.Field = Field;
+            this.ContractValue = ContractValue;
         }
     }
 }
