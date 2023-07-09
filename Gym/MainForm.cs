@@ -13,26 +13,34 @@ namespace Gym
         {
             InitializeComponent();
 
-            LoadTabels();
+            LoadTabels(true);
         }
 
         private void EmployeeAddBtn_Click(object sender, EventArgs e)
         {
-            new EmployeeForm().Show();
+            EmployeeForm EmployeeForm = new EmployeeForm();
+            EmployeeForm.Show();
+
+            this.Close();
         }
 
         private void CoachAddBtn_Click(object sender, EventArgs e)
         {
-            new CoachForm().Show();
-        
+            CoachForm CoachForm = new CoachForm();
+            CoachForm.Show();
+
+            this.Close();
         }
 
         private void PlayerAddBtn_Click(object sender, EventArgs e)
         {
-            new PlayerForm().Show();
+            PlayerForm PlayerForm = new PlayerForm();
+            PlayerForm.Show();
+
+            this.Close();
         }
 
-        private void LoadTabels(bool init = true)
+        public void LoadTabels(bool init = false)
         {
             if (!init)
             {

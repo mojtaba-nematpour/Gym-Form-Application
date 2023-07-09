@@ -16,5 +16,11 @@ namespace Gym
         {
             InitializeComponent();
         }
+
+        private void EmployeeForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MainForm MainForm = new MainForm();
+            MainForm.Show();
+        }
     }
 }

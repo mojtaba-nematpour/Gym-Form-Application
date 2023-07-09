@@ -281,6 +281,7 @@
             this.MinimumSize = new System.Drawing.Size(530, 370);
             this.Name = "EmployeeForm";
             this.Text = "افزودن کارمند";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EmployeeForm_FormClosed);
             this.EmployeeOtherBox.ResumeLayout(false);
             this.EmployeeOtherBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeImg)).EndInit();
